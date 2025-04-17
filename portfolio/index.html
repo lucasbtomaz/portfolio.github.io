@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Lucas B. Tomaz</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <button id="topBtn" onclick="scrollToTop()">↑ Topo</button>
+    <script>
+        const topBtn = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lucas B. Tomaz</h1>
+        <p>Desenvolvedor Full Stack | Entusiasta DevOps</p>
+        <p>
+            <a href="https://www.linkedin.com/in/lucasbentotomaz" target="_blank">LinkedIn</a> •
+            <a href="mailto:lucasbtomaz.dev@gmail.com">Email</a>
+        </p>
+    </header>
+
+    <section class="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou desenvolvedor full stack, apaixonado por tecnologia, com foco em qualidade de código, arquitetura limpa
+            e boas práticas.
+        </p>
+        <p>
+            Sou PcD (autista e com TDAH), o que me proporciona hiperfoco e um olhar diferenciado para padrões e
+            soluções.
+            Fora da programação, sou fã de videogames, adoro montar Lego (relaxa e estimula criatividade!) e sou
+            fascinado por investigações criminais —
+            se não fosse dev, provavelmente seria investigador ou perito forense!
+        </p>
+    </section>
+
+
+    <section class="projeto">
+        <h2>Biblioteca Digital</h2>
+        <p>
+            Sistema para gerenciamento de acervo compartilhado de livros e mangás. Backend com .NET, frontend em
+            Angular, mensagens via Kafka e banco de dados PostgreSQL.
+        </p>
+        <div class="links">
+            <a href="https://github.com/lucasbtomaz/biblioteca-digital-api" target="_blank">API</a>
+            <a href="https://github.com/lucasbtomaz/biblioteca-digital-frontend" target="_blank">Frontend</a>
+        </div>
+    </section>
+
+    <section class="projeto">
+        <h2>Em desenvolvimento...</h2>
+        <p>Novos projetos serão adicionados em breve. Fique de olho!</p>
+        <div class="links">
+            <a href="https://github.com/lucasbtomaz" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 - Lucas B. Tomaz</p>
+    </footer>
+
+</body>
+
+</html>
